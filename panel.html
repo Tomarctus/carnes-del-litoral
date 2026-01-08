@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel - Carnes del Litoral</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="panel-container">
+
+    <h1>Panel del Frigorífico</h1>
+    <p>Herramientas para compartir la tienda</p>
+
+    <div class="panel-box">
+        <h3>Link público:</h3>
+        <input type="text" id="publicLink" value="https://carnesdelitoral.com/pedir" readonly>
+        <button onclick="copiarLink()">Copiar link</button>
+    </div>
+
+    <div class="panel-box">
+        <h3>Código QR:</h3>
+        <div id="qrContainer"></div>
+        <button onclick="descargarQR()">Descargar QR</button>
+    </div>
+
+    <div class="panel-box">
+        <h3>Mensaje sugerido:</h3>
+        <textarea id="mensaje" rows="4">Buen día 👋 hacé tu pedido de media res acá:
+https://carnesdelitoral.com/pedir</textarea>
+        <button onclick="copiarMensaje()">Copiar mensaje</button>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="panel.js"></script>
+</body>
+</html>

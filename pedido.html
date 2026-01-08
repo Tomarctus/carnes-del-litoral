@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedidos | Carnes del Litoral</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedidos | Carnes del Litoral</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container pedidos">
+
+        <img src="logo.png" alt="Logo Carnes del Litoral" class="logo">
+
+        <h1 class="empresa">Realizá tu pedido</h1>
+
+        <!-- PRODUCTO 1 -->
+        <div class="producto">
+            <img src="res-cerdo.png" alt="Media res de cerdo" class="producto-img">
+            <h2>Media Res de Cerdo</h2>
+            <input type="number" id="cerdo" class="cantidad" placeholder="Cantidad" min="0">
+        </div>
+
+        <!-- PRODUCTO 2 -->
+        <div class="producto">
+            <img src="res-vacuna.png" alt="Media res vacuna" class="producto-img">
+            <h2>Media Res Vacuna</h2>
+            <input type="number" id="vacuna" class="cantidad" placeholder="Cantidad" min="0">
+        </div>
+
+        <!-- DATOS -->
+        <div class="datos-cliente">
+            <input type="text" id="nombre" class="dato" placeholder="Nombre">
+            <input type="text" id="direccion" class="dato" placeholder="Dirección de entrega">
+        </div>
+
+        <button class="btn-pedidos" id="btnEnviar">ENVIAR PEDIDO</button>
+
+    </div>
+
+    <!-- MODAL CONFIRMACIÓN -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>Confirmar pedido</h2>
+
+            <p id="resumenPedido"></p>
+
+            <p class="confirmacion">¿El pedido es correcto?</p>
+
+            <div class="modal-botones">
+                <button id="btnSi">SI</button>
+                <button id="btnNo">NO</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
