@@ -1,70 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Pedidos | Carnes del Litoral</title>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>Carnes del Litoral — Pedido</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="pedido.css">
 </head>
-
-<body>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Pedidos | Carnes del Litoral</title>
-
-    <link rel="stylesheet" href="styles.css">
-</head>
-
 <body>
 
-    <div class="container pedidos">
+<div class="container">
+    <img src="logo.png" class="logo" alt="logo">
 
-        <img src="logo.png" alt="Logo Carnes del Litoral" class="logo">
+    <h2>Realizar pedido</h2>
 
-        <h1 class="empresa">Realizá tu pedido</h1>
+    <img src="res-cerdo.png" class="cerdologo" alt="cerdologo">
+    <label>Media res de cerdo (cantidad)</label>
+    <input type="number" id="cerdo" min="0" placeholder="0">
 
-        <!-- PRODUCTO 1 -->
-        <div class="producto">
-            <img src="res-cerdo.png" alt="Media res de cerdo" class="producto-img">
-            <h2>Media Res de Cerdo</h2>
-            <input type="number" id="cerdo" class="cantidad" placeholder="Cantidad" min="0">
-        </div>
+    <img src="res-vacuna.png" class="vacunologo" alt="vacunologo">
+    <label>Media res vacuna (cantidad)</label>
+    <input type="number" id="vacuno" min="0" placeholder="0">
 
-        <!-- PRODUCTO 2 -->
-        <div class="producto">
-            <img src="res-vacuna.png" alt="Media res vacuna" class="producto-img">
-            <h2>Media Res Vacuna</h2>
-            <input type="number" id="vacuna" class="cantidad" placeholder="Cantidad" min="0">
-        </div>
+    <label>Nombre</label>
+    <input type="text" id="nombre" placeholder="Tu nombre" required>
 
-        <!-- DATOS -->
-        <div class="datos-cliente">
-            <input type="text" id="nombre" class="dato" placeholder="Nombre">
-            <input type="text" id="direccion" class="dato" placeholder="Dirección de entrega">
-        </div>
+    <label>Dirección de entrega</label>
+    <input type="text" id="direccion" placeholder="Calle y número" required>
 
-        <button class="btn-pedidos" id="btnEnviar">ENVIAR PEDIDO</button>
+    <label>Observaciones</label>
+    <textarea id="obs" placeholder="Ej: cortes especiales, aclaraciones, etc"></textarea>
 
-    </div>
+    <button id="btnEnviar">Enviar pedido</button>
+</div>
 
-    <!-- MODAL CONFIRMACIÓN -->
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <h2>Confirmar pedido</h2>
-
-            <p id="resumenPedido"></p>
-
-            <p class="confirmacion">¿El pedido es correcto?</p>
-
-            <div class="modal-botones">
-                <button id="btnSi">SI</button>
-                <button id="btnNo">NO</button>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+<script src="pedido.js"></script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 420px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.logo {
+    width: 140px;
+    display: block;
+    margin: 10px auto 20px auto;
+}
+
+.cerdologo {
+    width: 180px;
+    display: block;
+    margin: 10px auto 20px auto;
+}
+
+.vacunologo {
+    width: 180px;
+    display: block;
+    margin: 10px auto 20px auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    background: #d70000;
+    border: none;
+    color: #fff;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: .8;
+}
